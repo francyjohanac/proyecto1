@@ -4,6 +4,7 @@ import java.util.logging.*;
 import javax.swing.JOptionPane;
 
 
+
 public class conexionSQL {
 
   
@@ -18,7 +19,7 @@ public class conexionSQL {
 			conectar = DriverManager.getConnection("jdbc:mysql://localhost/tratamiento", "root", "");
                         at = conectar.createStatement();
 		} catch (ClassNotFoundException | SQLException e) {
-			System.out.println ("Esta conectado");
+			
 		}
 		return conectar;  
     }
